@@ -4,3 +4,29 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.container {
+  padding-top: 5%;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.info {
+  width: 75%;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 2px;
+}
+input:focus {
+  outline-width: 0;
+}
+
+button {
+  background-color: #fff;
+  border-color: black;
+}

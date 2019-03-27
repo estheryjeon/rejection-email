@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rejection Generator</title>
+  <title>Rejection Email Generator</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
-  <h1>Rejection Generator</h1>
-
-  <form>
-    Applicant Name:<br>
-    <input type="text" name="name"><br>
-    Role:<br>
-    <input type="text" name="role"><br>
-    Company:<br>
-    <input type="text" name="company"><br><br>
-    <input type="submit" value="Reject">
-  </form>
-
-  <div id=rejection>
-    <!--- Rejection Email Here-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-4">
+        <p class="title">Rejection Email Generator<br></p>
+        <p class="info">Need help rejecting an applicant? You've come to the right place.
+        Just fill out the information below and copy + paste away.</p>
+        <br><br>
+        <form>
+          <span class="title">Applicant Name</span><br>
+          <input type="text" name="app" id="app" value=""><br><br>
+          <span class="title">Role</span><br>
+          <input type="text" name="role" id="role" value=""><br><br>
+          <span class="title">Company</span><br>
+          <input type="text" name="company" id="company" value=""><br><br>
+          <br><br>
+          <button type="button" onclick="newEmail()">Reject</button>
+        </form>
+      </div>
+      <div class="col-sm-6">
+        <div id="emailDisplay">
+          <!--- Rejection Email Here-->
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
   </div>
 
 </body>

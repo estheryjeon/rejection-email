@@ -123,6 +123,6 @@ function newEmail() {
 
   /* display email */
   document.getElementById('emailDisplay').innerHTML = email;
-  
+
 
 }

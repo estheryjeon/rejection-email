@@ -8,7 +8,7 @@ function newEmail() {
     'Your ' + company + ' Application',
     'Update From ' + company,
     'Update on your application to ' + company,
-    'Your application for the' + role + ' at ' + company,
+    'Your application for the ' + role + ' at ' + company,
     app + ', an update on your ' + company + ' application',
     company + ', your application for ' + role,
     'Thank you for your interest in ' + company,
@@ -116,13 +116,12 @@ function newEmail() {
   var randomSignOff = Math.floor(Math.random() * (signOff.length));
 
   /* email */
-  var email = subjectLine[randomSubjectLine] + '<br><br><br>' +
+  var email = '<span class="title">' + subjectLine[randomSubjectLine] + '</span>'+ '<br><br><br>' +
   address[randomAddress] + '<br><br>' + thanks[randomThanks] +
   '<br><br>' + body[randomBody] + '<br><br>' + wellWishes[randomWellWishes] +
   '<br><br><br>' + signOff[randomSignOff];
 
   /* display email */
   document.getElementById('emailDisplay').innerHTML = email;
-
 
 }

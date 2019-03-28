@@ -1,8 +1,17 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body {
+html, body {
   font-family: 'Roboto', sans-serif;
+  cursor: url('hand-2-pink.png'), default;
+}
+
+div {
+  color: #3255A4;
+}
+
+::selection {
+  background: #FFE800;
 }
 
 .container {
@@ -14,20 +23,56 @@ body {
   font-weight: bold;
 }
 
+#highlight {
+  background: #FFE800;
+}
+
 .info {
   width: 75%;
 }
 
 input {
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1.5px solid #3255A4;
   margin: 2px;
+  color: #ff48b0;
+  caret-color: #ff48b0;
+  cursor: url('type-pink.png'), default !important;
 }
 input:focus {
   outline-width: 0;
 }
 
+form {
+  cursor: url('type-pink.png'), default !important;
+}
+
 button {
   background-color: #fff;
-  border: 1px solid black;
+  color: #3255A4;
+  border: 1.5px solid #3255A4;
+}
+button:focus {
+  outline: none !important;
+}
+button:hover {
+  border: 1.5px solid #ff48b0;
+  color: #ff48b0 !important;
+}
+#button {
+  font-weight: bold;
+  cursor: url('pointer-pink.png'), default !important;
+}
+
+a {
+  font-weight: bold;
+  color: #3255A4 !important;
+}
+a:active {
+  color: #ff48b0 !important;
+}
+a:hover {
+  color: #ff48b0 !important;
+  text-decoration: none !important;
+  cursor: url('pointer-pink.png'), default;
 }

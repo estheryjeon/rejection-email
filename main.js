@@ -116,7 +116,7 @@ function newEmail() {
   var randomSignOff = Math.floor(Math.random() * (signOff.length));
 
   /* email */
-  var email = '<span class="title">' + subjectLine[randomSubjectLine] + '</span>'+ '<br><br><br>' +
+  var email = '<span class="title" id="highlight">' + subjectLine[randomSubjectLine] + '</span>'+ '<br><br><br>' +
   address[randomAddress] + '<br><br>' + thanks[randomThanks] +
   '<br><br>' + body[randomBody] + '<br><br>' + wellWishes[randomWellWishes] +
   '<br><br><br>' + signOff[randomSignOff];

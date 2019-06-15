@@ -123,5 +123,7 @@ function newEmail() {
 
   /* display email */
   document.getElementById('emailDisplay').innerHTML = email;
+  $('#button').text('Reject Again!');
+
 
 }

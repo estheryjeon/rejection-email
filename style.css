@@ -38,6 +38,8 @@ input {
   color: #ff48b0;
   caret-color: #ff48b0;
   cursor: url('type-pink.png'), default !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 input:focus {
   outline-width: 0;
@@ -51,6 +53,8 @@ button {
   background-color: #fff;
   color: #3255A4;
   border: 1.5px solid #3255A4;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 button:focus {
   outline: none !important;

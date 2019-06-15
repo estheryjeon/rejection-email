@@ -39,7 +39,7 @@ input {
   caret-color: #ff48b0;
   cursor: url('type-pink.png'), default !important;
   -webkit-appearance: none;
-  -moz-appearance: none;
+  border-radius: 0;
 }
 input:focus {
   outline-width: 0;

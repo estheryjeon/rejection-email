@@ -1,3 +1,9 @@
+$("#button").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#emailDisplay").offset().top},
+        'slow');
+});
+
 function newEmail() {
 
   var app = document.getElementById("app").value;
